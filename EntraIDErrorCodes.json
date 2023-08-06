@@ -40,6 +40,18 @@
     "Message": "Error processing session data. QR Code was already redeemed."
   },
   {
+    "code": 29210,
+    "Message": "QR Code sign-in is disabled via user credential policy."
+  },
+  {
+    "code": 29211,
+    "Message": "QR Code sign-in is not supported for passthrough users."
+  },
+  {
+    "code": 29212,
+    "Message": "QR Code sign-in is not supported for consumer user scenarios."
+  },
+  {
     "code": 40002,
     "Message": "The identity provider returned an error. The status returned was '{status}' and the message was '{message}'."
   },
@@ -82,6 +94,26 @@
   {
     "code": 40016,
     "Message": "The Identity Provider returned an error."
+  },
+  {
+    "code": 50000,
+    "Message": "There was an error issuing a token or an issue with our sign-in service."
+  },
+  {
+    "code": 50001,
+    "Message": "The resource is disabled or the resource named could not be found. This can happen if the application has not been installed by the administrator of the tenant, or if the resource principal was not found in the directory or is invalid due to a typo."
+  },
+  {
+    "code": 50002,
+    "Message": "This tenant isn't supported for this authentication method yet."
+  },
+  {
+    "code": 50003,
+    "Message": "Certificate roll is in progress. Please retry the operation later."
+  },
+  {
+    "code": 50004,
+    "Message": "A transient error has occurred. Please try again."
   },
   {
     "code": 50005,
@@ -142,6 +174,54 @@
   {
     "code": 50023,
     "Message": "ClaimType '{claimType}' is reserved for system use."
+  },
+  {
+    "code": 50024,
+    "Message": "Unable to decrypt client state."
+  },
+  {
+    "code": 50025,
+    "Message": "The issuer name must be specified."
+  },
+  {
+    "code": 50026,
+    "Message": "The mail is too long, maximum length is {length}."
+  },
+  {
+    "code": 50027,
+    "Message": "JWT token is invalid or malformed."
+  },
+  {
+    "code": 50029,
+    "Message": "The reply URI specified in the request contains invalid characters. Domain names of this form are not supported."
+  },
+  {
+    "code": 50030,
+    "Message": "Either forwardableOnBehalfOfOriginsAcceptedAudiencesList or ForwardableOnBehalfOfOriginsAcceptedPrecedingAppsList property in the first party app registration is not set. Both fields need to be filled on first party app portal for PFT OBO to be successful."
+  },
+  {
+    "code": 50032,
+    "Message": "RSA key size {actualSize} is less than the minimum required {minSize} bits."
+  },
+  {
+    "code": 50033,
+    "Message": "A transient error has occurred. Please try again."
+  },
+  {
+    "code": 50034,
+    "Message": "The user account {identifier} does not exist in the {tenant} directory. To sign into this application, the account must be added to the directory."
+  },
+  {
+    "code": 50035,
+    "Message": "ECC key size {actualSize} is less than the minimum required {minSize} bits."
+  },
+  {
+    "code": 50038,
+    "Message": "The API version isn't supported."
+  },
+  {
+    "code": 50042,
+    "Message": "The salt required to generate a pairwise identifier is missing in the principal."
   },
   {
     "code": 50043,
@@ -206,6 +286,10 @@
   {
     "code": 50061,
     "Message": "Unable to complete signout. The request was invalid."
+  },
+  {
+    "code": 50062,
+    "Message": "Signout request is unauthorized."
   },
   {
     "code": 50068,
@@ -304,6 +388,70 @@
     "Message": "Device authentication is required."
   },
   {
+    "code": 50098,
+    "Message": "JWT body must contain '{field}'."
+  },
+  {
+    "code": 50099,
+    "Message": "Invalid nonce."
+  },
+  {
+    "code": 50100,
+    "Message": "There was an error transforming the claims for the token."
+  },
+  {
+    "code": 50101,
+    "Message": "Unknown claims transformer '{name}' was specified for principal '{principalId}'."
+  },
+  {
+    "code": 50102,
+    "Message": "Unable to load CustomClaimsTransformer '{type}' was specified for principal '{principalId}'."
+  },
+  {
+    "code": 50103,
+    "Message": "There was an error transforming the claims for the token: {errorMessage}"
+  },
+  {
+    "code": 50105,
+    "Message": "Your administrator has configured the application {appName} ('{appId}') to block users unless they are specifically granted ('assigned') access to the application.  The signed in user '{user}' is blocked because they are not a direct member of a group with access, nor had access directly assigned by an administrator. Please contact your administrator to assign access to this application."
+  },
+  {
+    "code": 50107,
+    "Message": "The requested federation realm object '{name}' does not exist."
+  },
+  {
+    "code": 50120,
+    "Message": "Unknown credential type, issue with the JWT header."
+  },
+  {
+    "code": 50123,
+    "Message": "Unknown claims transformation method '{method}' was specified for principal '{principalId}'."
+  },
+  {
+    "code": 50124,
+    "Message": "Invalid regular expression configured for claims transformation for this application."
+  },
+  {
+    "code": 50125,
+    "Message": "Sign-in was interrupted due to a password reset or password registration entry."
+  },
+  {
+    "code": 50126,
+    "Message": "Error validating credentials due to invalid username or password."
+  },
+  {
+    "code": 50127,
+    "Message": "Client app is a MAM app and device is not registered."
+  },
+  {
+    "code": 50128,
+    "Message": "No tenant-identifying information found in either the request or implied by any provided credentials."
+  },
+  {
+    "code": 50129,
+    "Message": "The device is not workplace joined. Workplace join is required to register the device."
+  },
+  {
     "code": 50130,
     "Message": "The claim value(s) '{value}' cannot be interpreted as known auth method(s)."
   },
@@ -382,6 +530,62 @@
   {
     "code": 50150,
     "Message": "The provided credentials does not have a valid user consent approval information."
+  },
+  {
+    "code": 50155,
+    "Message": "Device authentication failed."
+  },
+  {
+    "code": 50156,
+    "Message": "Device tokens are not supported for V2 resource."
+  },
+  {
+    "code": 50157,
+    "Message": "User redirection required for routing."
+  },
+  {
+    "code": 50158,
+    "Message": "External security challenge not satisfied. User will be redirected to another page or authentication provider to satisfy additional authentication challenges."
+  },
+  {
+    "code": 50159,
+    "Message": "Claims sent by external provider are not enough."
+  },
+  {
+    "code": 50160,
+    "Message": "Different target tenant is preferred."
+  },
+  {
+    "code": 50161,
+    "Message": "Failed to validate authorization url of external claims provider."
+  },
+  {
+    "code": 50168,
+    "Message": "The client is capable of utilizing the Windows 10 Accounts extension to perform SSO but no SSO token was found in the request or the token was expired. Request has been interrupted to attempt to pull an SSO token."
+  },
+  {
+    "code": 50169,
+    "Message": "The realm '{realm}' is not a configured realm of the current service namespace."
+  },
+  {
+    "code": 50170,
+    "Message": "The external controls mapping is missing."
+  },
+  {
+    "code": 50172,
+    "Message": "External claims provider {provider} is not approved."
+  },
+  {
+    "code": 50173,
+    "Message": "The provided grant has expired due to it being revoked, a fresh auth token is needed. The user might have changed or reset their password. The grant was issued on '{authTime}' and the TokensValidFrom date (before which tokens are not valid) for this user is '{validDate}'."
+  },
+  {
+    "code": 50176,
+    "Message": "Missing definition of external control: {controlId}."
+  },
+  {
+    "code": 50177,
+    "Message": "User account '{user}' from identity provider '{idp}' does not exist in tenant '{tenant}' and cannot access the application '{appId}'({appName}) in that tenant. The account needs to be added as an external user in the tenant first. Sign out and sign in again with a different Azure Active Directory user account."
   },
   {
     "code": 50178,
@@ -600,6 +804,22 @@
     "Message": "Client '{clientId}' required resource access configuration has changed and therefore the request could not be completed. Please try again."
   },
   {
+    "code": 70024,
+    "Message": "OIDC Provider Metadata missing required field '{fieldName}'."
+  },
+  {
+    "code": 70030,
+    "Message": "Remote authentication failed to read session from storage."
+  },
+  {
+    "code": 70031,
+    "Message": "Remote authentication session is in a bad state."
+  },
+  {
+    "code": 70033,
+    "Message": "The remote auth session with this device code has already been approved."
+  },
+  {
     "code": 70034,
     "Message": "The remote auth session with this device code has already been denied."
   },
@@ -638,6 +858,14 @@
   {
     "code": 70046,
     "Message": "The session has expired or is invalid due to re-authentication checks by conditional access."
+  },
+  {
+    "code": 81001,
+    "Message": "Service ticket size exceeded the maximum allowed."
+  },
+  {
+    "code": 81004,
+    "Message": "Kerberos authentication failed."
   },
   {
     "code": 81005,
@@ -836,6 +1064,54 @@
     "Message": "National Cloud Name is missing in the postback request."
   },
   {
+    "code": 90043,
+    "Message": "OAuth2 grant was issued by National Cloud STS."
+  },
+  {
+    "code": 90044,
+    "Message": "National Cloud Request Process Switched off."
+  },
+  {
+    "code": 90045,
+    "Message": "Service is too busy. Please try again later."
+  },
+  {
+    "code": 90046,
+    "Message": "Internal use"
+  },
+  {
+    "code": 90047,
+    "Message": "Internal use"
+  },
+  {
+    "code": 90049,
+    "Message": "Application could not be found."
+  },
+  {
+    "code": 90050,
+    "Message": "Response content length from external IdP exceeds supported limit."
+  },
+  {
+    "code": 90051,
+    "Message": "Invalid Delegation Token. Invalid national Cloud ID ({cloudId}) is specified."
+  },
+  {
+    "code": 90052,
+    "Message": "Actual message content is runtime specific. Please see returned exception message for details."
+  },
+  {
+    "code": 90072,
+    "Message": "User account '{user}' from identity provider '{idp}' does not exist in tenant '{tenant}' and cannot access the application '{application}'({appName}) in that tenant. The account needs to be added as an external user in the tenant first. Sign out and sign in again with a different Azure Active Directory user account"
+  },
+  {
+    "code": 90073,
+    "Message": "Invalid Fairfax Gateway Redirect."
+  },
+  {
+    "code": 90081,
+    "Message": "An error occurred when the service tried to process a WS-Federation message. The message was invalid, malformatted, or contains potentially dangerous characters."
+  },
+  {
     "code": 90082,
     "Message": "Authentication policy '{name}' selected for the request is not currently supported."
   },
@@ -920,6 +1196,54 @@
     "Message": "'{name}' value must be a valid absolute URI."
   },
   {
+    "code": 90107,
+    "Message": "The request is not valid. Make sure your data doesn't have invalid characters."
+  },
+  {
+    "code": 90112,
+    "Message": "Application identifier is expected to be a GUID."
+  },
+  {
+    "code": 90114,
+    "Message": "The specified bulk AADJ token expiration timestamp will cause an expired token to be issued."
+  },
+  {
+    "code": 90116,
+    "Message": "{method} request is made, while POST is the only supported verb."
+  },
+  {
+    "code": 90117,
+    "Message": "Invalid request."
+  },
+  {
+    "code": 90119,
+    "Message": "The user code is null or missing."
+  },
+  {
+    "code": 90120,
+    "Message": "This request was already authorized or declined."
+  },
+  {
+    "code": 90121,
+    "Message": "Invalid empty request."
+  },
+  {
+    "code": 90122,
+    "Message": "User identifier is not present."
+  },
+  {
+    "code": 90123,
+    "Message": "The token can't be issued because the identity or claim issuance provider denied the request. Response code: {errorCode}."
+  },
+  {
+    "code": 90124,
+    "Message": "{resConstant} '{resourceId}' {resourceName} is not supported over the /common or /consumers endpoints. Please use the /organizations or tenant-specific endpoint."
+  },
+  {
+    "code": 90125,
+    "Message": "{userName} isn't in our system. Make sure you entered the user name correctly."
+  },
+  {
     "code": 90126,
     "Message": "User Type is not supported on this endpoint. The system can't infer the user's tenant from the user name: {userName}"
   },
@@ -966,6 +1290,10 @@
   {
     "code": 90139,
     "Message": "Invalid request. The device code flow connect mode in your request is only supported for the /consumers/ tenant."
+  },
+  {
+    "code": 90150,
+    "Message": "Failed to read request."
   },
   {
     "code": 130001,
@@ -1026,6 +1354,10 @@
   {
     "code": 130507,
     "Message": "An access pass could not be found or verified for the user."
+  },
+  {
+    "code": 135000,
+    "Message": "Fido signature verification failed."
   },
   {
     "code": 135001,
@@ -1108,6 +1440,14 @@
     "Message": "Invalid Fido assertion."
   },
   {
+    "code": 135021,
+    "Message": "Invalid UserHandle prefix."
+  },
+  {
+    "code": 135022,
+    "Message": "Redirect uri provided by MSA is not valid."
+  },
+  {
     "code": 140000,
     "Message": "Request nonce is expired. Current time: {curTime}, expiry time of assertion {expTime}."
   },
@@ -1148,6 +1488,14 @@
     "Message": "Kerberos crypto bad request"
   },
   {
+    "code": 140010,
+    "Message": "Kerberos ticket validation failure"
+  },
+  {
+    "code": 160011,
+    "Message": "Selected user account was invalid."
+  },
+  {
     "code": 160021,
     "Message": "Application requested a user session which does not exist."
   },
@@ -1174,6 +1522,18 @@
   {
     "code": 240005,
     "Message": "Missing required user role to acquire a bulk AADJ token. For more information please go to https://go.microsoft.com/fwlink/?linkid=2224591."
+  },
+  {
+    "code": 399206,
+    "Message": "An unexpeted and non-retryable error happened when fetching bloomfilter data from blob storage."
+  },
+  {
+    "code": 399207,
+    "Message": "The token request does not contain one or more supported response token type(s): '{ResType}'."
+  },
+  {
+    "code": 399208,
+    "Message": "Registered certificates must not be used for token binding for public clients. Please use ephemeral client certificates."
   },
   {
     "code": 399209,
@@ -1224,6 +1584,42 @@
     "Message": "More than one service principal returned"
   },
   {
+    "code": 399229,
+    "Message": "Multiple MAM Browser client IDs are present in the claims collection. Values: {values}"
+  },
+  {
+    "code": 399230,
+    "Message": "MAM Browser application principal '{appPrincipalId}' is not valid in the directory"
+  },
+  {
+    "code": 399231,
+    "Message": "MAM Browser application principal '{appPrincipalId}' does not have any usable reply address in the directory"
+  },
+  {
+    "code": 399232,
+    "Message": "MAM Browser application principal '{appPrincipalId}' reply address validation failed. Reason: '{reason}'"
+  },
+  {
+    "code": 399233,
+    "Message": "DstsCache is missing the Signingkey info"
+  },
+  {
+    "code": 399234,
+    "Message": "Recieved public Signingkey response has XML parsing error"
+  },
+  {
+    "code": 399235,
+    "Message": "Invalid Soap Headers passed to Dsts request"
+  },
+  {
+    "code": 399236,
+    "Message": "Invalid Soap Body passed to Dsts request"
+  },
+  {
+    "code": 399237,
+    "Message": "Failure when proxying a request from DstsCache to legacy dSTS"
+  },
+  {
     "code": 500011,
     "Message": "The resource principal named {name} was not found in the tenant named {tenant}. This can happen if the application has not been installed by the administrator of the tenant or consented to by any user in the tenant. You might have sent your authentication request to the wrong tenant."
   },
@@ -1264,6 +1660,26 @@
     "Message": "'{headerFromCredential}' is not the same as '{headerFromRequest}'."
   },
   {
+    "code": 500024,
+    "Message": "Conflicting tenant restrictions signals received by the server on the login request. The header indicated '{headerFromRequest}' while the application added a claims request for '{headerFromClaims}'. This can indicate conflicting network and device policies, which Azure AD does not support."
+  },
+  {
+    "code": 500025,
+    "Message": "Conflicting tenant restrictions signals received by the server from a claims request. The header from the Id Token '{headerFromIdToken}' is different than the header from the access token '{headerFromAccessToken}'."
+  },
+  {
+    "code": 500031,
+    "Message": "Cannot find signing certificate configured."
+  },
+  {
+    "code": 500032,
+    "Message": "Cannot find signing certificate/private key to issue a certificate."
+  },
+  {
+    "code": 500033,
+    "Message": "There is an issue with the key '{kid}'. It has both x5t and x5c values, but they do not match. Please make sure the x5t value is the Base64Url-encoded SHA-1 thumbprint of the first certificate in x5c."
+  },
+  {
     "code": 500081,
     "Message": "SAML assertion validation failed: no supported token signature is provided."
   },
@@ -1298,6 +1714,10 @@
   {
     "code": 500089,
     "Message": "SAML 2.0 assertion validation failed: {details}"
+  },
+  {
+    "code": 500101,
+    "Message": "Audience URI validation failed. No token audiences were found."
   },
   {
     "code": 500102,
@@ -1420,6 +1840,26 @@
     "Message": "The user's redemption is complete and the sign-in should continue."
   },
   {
+    "code": 500183,
+    "Message": "Certificate has been revoked."
+  },
+  {
+    "code": 500184,
+    "Message": "Client assertion JWT token failed verification during certificate based authentication. The token is not signed by the certificate provided in the token."
+  },
+  {
+    "code": 500185,
+    "Message": "Tenant differs between user login and certificate user."
+  },
+  {
+    "code": 500186,
+    "Message": "User not allowed by policy conditions."
+  },
+  {
+    "code": 500187,
+    "Message": "Selected certificate does not meet the criteria."
+  },
+  {
     "code": 500200,
     "Message": "User account '{email}' is a personal Microsoft account. Personal Microsoft accounts are not supported for this application unless explicitly invited to an organization. Try signing out and signing back in with an organizational account."
   },
@@ -1464,6 +1904,18 @@
     "Message": "User account '{email}' from identity provider '{idp}' does not exist in tenant '{tenant}' and cannot access the application '{appId}'({appName}) in that tenant. The account needs to be added as an external user in the tenant first. Sign out and sign in again with a different Azure Active Directory user account."
   },
   {
+    "code": 500212,
+    "Message": "The user's administrator has set an outbound access policy that does not allow access to the resource tenant."
+  },
+  {
+    "code": 500213,
+    "Message": "The resource tenant's cross-tenant access policy does not allow this user to access this tenant."
+  },
+  {
+    "code": 500331,
+    "Message": "An error occurred while attempting to create a certificate from bytes."
+  },
+  {
     "code": 500341,
     "Message": "The user account {identifier} has been deleted from the {tenant} directory. To sign into this application, the account must be added to the directory."
   },
@@ -1486,6 +1938,18 @@
   {
     "code": 500571,
     "Message": "The guest user account is disabled."
+  },
+  {
+    "code": 500581,
+    "Message": "Rendering JavaScript. Fetching sessions for single-sign-on on V2 with prompt=none requires javascript to verify if any MSA accounts are signed in."
+  },
+  {
+    "code": 500582,
+    "Message": "Microsoft Account session_id with prompt=none not supported on AAD tenant."
+  },
+  {
+    "code": 500583,
+    "Message": "Storage Access required."
   },
   {
     "code": 500881,
@@ -1532,12 +1996,20 @@
     "Message": "Silent interrupt required to recognize browser capabilities. Used to differentiate between Safari running in iPadOS or Mac."
   },
   {
+    "code": 501471,
+    "Message": "Missing code_challenge parameter."
+  },
+  {
     "code": 501481,
     "Message": "The Code_Verifier does not match the code_challenge supplied in the authorization request."
   },
   {
     "code": 501482,
     "Message": "The Code_Verifier length is less than invalid."
+  },
+  {
+    "code": 501491,
+    "Message": "Invalid size of Code_Challenge parameter."
   },
   {
     "code": 501811,
@@ -1564,6 +2036,14 @@
     "Message": "Browser not supported."
   },
   {
+    "code": 530021,
+    "Message": "Application does not meet the conditional access approved app requirements."
+  },
+  {
+    "code": 530022,
+    "Message": "Browser not supported."
+  },
+  {
     "code": 530031,
     "Message": "Access policy does not allow token issuance."
   },
@@ -1582,6 +2062,10 @@
   {
     "code": 530035,
     "Message": "Access has been blocked by security defaults."
+  },
+  {
+    "code": 650041,
+    "Message": "User terminated the request."
   },
   {
     "code": 650051,
@@ -1756,6 +2240,26 @@
     "Message": "Client is not authorized to override managed identity claim in the token."
   },
   {
+    "code": 700037,
+    "Message": "Client assertion must declare x5c header when overriding managed resource ID."
+  },
+  {
+    "code": 700038,
+    "Message": "00000000-0000-0000-0000-000000000000 is not a valid application identifier."
+  },
+  {
+    "code": 700039,
+    "Message": "00000000-0000-0000-0000-000000000000 is not a valid resource identifier"
+  },
+  {
+    "code": 700040,
+    "Message": "Managed Resource ID '{inputManagedResourceId}' is not a valid resource identifier."
+  },
+  {
+    "code": 700041,
+    "Message": "Post-logout redirect uri is not in approved list. Requested post-logout url: {url}."
+  },
+  {
     "code": 700042,
     "Message": "The reply address does not match the reply addresses configured for the application."
   },
@@ -1840,12 +2344,56 @@
     "Message": "The request body must contain the following parameter: '{name}'."
   },
   {
+    "code": 900161,
+    "Message": "Invalid access token. Required tenant ID claim is missing."
+  },
+  {
     "code": 900941,
     "Message": "Administrator consent is required. App is considered risky."
   },
   {
     "code": 900942,
     "Message": "Admin consent is required in order to allow token to be issued for clients to access resource."
+  },
+  {
+    "code": 1000005,
+    "Message": "Invalid definition for external identity provider, domain is missing"
+  },
+  {
+    "code": 1000006,
+    "Message": "Invalid definition for external identity provider with domain '{domain}'. Reason: Following properties are mandatory: domain, issuer URI, passive authentication URL."
+  },
+  {
+    "code": 1000007,
+    "Message": "Invalid definition for external identity provider with domain '{domain}'. Reason: The value '{url}' in the property '{urlType}' must be an absolute URL."
+  },
+  {
+    "code": 1000008,
+    "Message": "Invalid definition for external identity provider with domain '{domain}'. Reason: The value '{url}' in the property '{urlType}' must be https."
+  },
+  {
+    "code": 1000009,
+    "Message": "Invalid definition for external identity provider with domain '{domain}'. Reason: Only WsFederation/SamlP/OAuth2 protocols are allowed."
+  },
+  {
+    "code": 1000010,
+    "Message": "Invalid definition for external identity provider with domain '{domain}'. Reason: Domain '{value}' is not in expected format."
+  },
+  {
+    "code": 1000011,
+    "Message": "Invalid definition for external identity provider with domain '{domain}'. Reason: Issuer '{value}' is not in expected format."
+  },
+  {
+    "code": 1000012,
+    "Message": "Invalid definition for external identity provider with domain '{domain}'. Reason: Domain '{value}' is a reserved value."
+  },
+  {
+    "code": 1000013,
+    "Message": "Invalid definition for external identity provider with domain '{domain}'. Reason: Issuer '{value}' is a reserved value."
+  },
+  {
+    "code": 1000014,
+    "Message": "Cannot issue On-Behalf-Of token for tenant '{tenant1}' as JWT bearer token was issued for '{tenant2}'."
   },
   {
     "code": 1000015,
@@ -1956,6 +2504,30 @@
     "Message": "Request contains mismatched device ids."
   },
   {
+    "code": 1002001,
+    "Message": "The device template was not found in the tenant '{tenantName}'."
+  },
+  {
+    "code": 1002002,
+    "Message": "The Cert Based Auth Configuration was not found in the tenant '{tenantName}' or was invalid."
+  },
+  {
+    "code": 1002003,
+    "Message": "The TLS certificate provided does not match the certificate on the device."
+  },
+  {
+    "code": 1002004,
+    "Message": "The MTLS subject was not found in the subject or SAN list."
+  },
+  {
+    "code": 1002005,
+    "Message": "Device in tenant '{tenantName}' does not have suitable credentials."
+  },
+  {
+    "code": 1002006,
+    "Message": "Request contains empty or invalid subject."
+  },
+  {
     "code": 1002007,
     "Message": "Missing required roles to access token evaluation data endpoint, roles present in the token is {roles}"
   },
@@ -2006,6 +2578,66 @@
   {
     "code": 1002024,
     "Message": "A primary refresh token must be redeemed with a prt protocol version."
+  },
+  {
+    "code": 1002026,
+    "Message": "Common endpoint for app tokens is on the deprecation path and not supported on regional AAD. Please use the tenanted endpoint instead."
+  },
+  {
+    "code": 1002027,
+    "Message": "Some of the collected attributes were invalid."
+  },
+  {
+    "code": 1002028,
+    "Message": "Missing required roles to access partitioned token signing key endpoint, roles present in the token is {roles}"
+  },
+  {
+    "code": 1002029,
+    "Message": "Unable to authorize to the partitioned token signing key endpoint. Unexpected scope present in the bearer token, app delegation(service principal obo) token is not supported to access the endpoint."
+  },
+  {
+    "code": 1002030,
+    "Message": "Internal service error occured in first party app token validator."
+  },
+  {
+    "code": 1003012,
+    "Message": "The custom extension returned an invalid action type defined for that custom extension type."
+  },
+  {
+    "code": 1003013,
+    "Message": "Invalid request. Nonce from artifact has expired."
+  },
+  {
+    "code": 1003014,
+    "Message": "The custom extension resourceId should be in the format of api://fully qualified domain name/appid."
+  },
+  {
+    "code": 1003015,
+    "Message": "The targetUrl and resourceId of the custom extension should have the same fully qualified domain name."
+  },
+  {
+    "code": 1003016,
+    "Message": "The appId of the custom extension resourceId should correspond to a real service principal in the tenant."
+  },
+  {
+    "code": 1003017,
+    "Message": "The Azure Active Directory Authentication Extensions service principal not found in tenant."
+  },
+  {
+    "code": 1003018,
+    "Message": "The Azure Active Directory Authentication Extensions service principal is disabled in this tenant."
+  },
+  {
+    "code": 1003019,
+    "Message": "The custom extension resource service principal is disabled in this tenant."
+  },
+  {
+    "code": 1003020,
+    "Message": "The target URL is in an improper format. It's must be a valid URL that start with https://"
+  },
+  {
+    "code": 1003021,
+    "Message": "The permission CustomAuthenticationExtension.Receive.Payload is not granted to the service principal of the resource app."
   },
   {
     "code": 1003022,
@@ -2184,6 +2816,14 @@
     "Message": "The security enclave type {enclave} of the token binding key is unknown. Please consider re-enrolling the device."
   },
   {
+    "code": 7000033,
+    "Message": "Token doesn't contain expected claim: '{claim}'."
+  },
+  {
+    "code": 7000034,
+    "Message": "The token binding claim is malformatted. Please consider re-enrolling the device."
+  },
+  {
     "code": 7000110,
     "Message": "Request is ambiguous, multiple application identifiers found."
   },
@@ -2292,6 +2932,30 @@
     "Message": "The client application {appId} is missing service principal in the tenant {tenantId}. See instructions here: https://go.microsoft.com/fwlink/?linkid=2225119"
   },
   {
+    "code": 9002310,
+    "Message": "Invalid request. The transforms element must contain at least one transform."
+  },
+  {
+    "code": 9002311,
+    "Message": "Invalid request. Unsupported canonicalization algorithm."
+  },
+  {
+    "code": 9002312,
+    "Message": "Invalid request. XML is empty."
+  },
+  {
+    "code": 9002313,
+    "Message": "Invalid request. Request is malformed or invalid."
+  },
+  {
+    "code": 9002314,
+    "Message": "Resource hostname is required."
+  },
+  {
+    "code": 9002315,
+    "Message": "Invalid request. Cannot use /consumers/ on v1 signout."
+  },
+  {
     "code": 9002316,
     "Message": "Invalid request. Cannot select consumer user session if the endpoint does not support consumer logout."
   },
@@ -2374,5 +3038,21 @@
   {
     "code": 9002336,
     "Message": "Invalid RDP request."
+  },
+  {
+    "code": 9002337,
+    "Message": "Invalid request. The application is registered in the legacy Microsoft Account tenant using apps.dev.microsoft.com, but is configured for use by Azure Active Directory tenants only. Use of /common is not supported for this registration. Please use a tenanted endpoint to request a token."
+  },
+  {
+    "code": 9002338,
+    "Message": "Invalid request. Request is malformed or invalid."
+  },
+  {
+    "code": 9002339,
+    "Message": "Unsupported user account for this endpoint. The user is a Microsoft Accounts user, but this app does not have the Microsoft account audience enabled. Either enable Microsoft account support to use the /common endpoint or use the tenanted endpoint to target a specific Azure AD tenant for auth."
+  },
+  {
+    "code": 9002340,
+    "Message": "The permission (scope) list {scopeListString} is missing Rdp flow allowed permissions."
   }
 ]
