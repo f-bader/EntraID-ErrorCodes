@@ -17,7 +17,7 @@
       "properties": {
         "displayName": "EntraIDErrorCodes",
         "source": "EntraIDErrorCodes.csv",
-        "description": "Azure Public IPs list for reducing internet facing traffic alerts from MSFT IP Addresses",
+        "description": "List of all known Entra ID Error codes that have the ResultDescription Other",
         "provider": "Microsoft",
         "isDeleted": false,
         "labels": [],
