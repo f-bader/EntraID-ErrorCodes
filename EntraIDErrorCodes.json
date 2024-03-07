@@ -1,5 +1,9 @@
 [
   {
+    "code": 16003,
+    "Message": "The user account does not exist in the directory or the user hasn't been explicitly added to the tenant. To sign into this application, the account must be added to the directory."
+  },
+  {
     "code": 26000,
     "Message": "The provided access grant requires interaction."
   },
@@ -1296,6 +1300,10 @@
     "Message": "Failed to read request."
   },
   {
+    "code": 90202,
+    "Message": "A transient error has occurred. Please try again."
+  },
+  {
     "code": 130001,
     "Message": "Signature key ID is not provided."
   },
@@ -1524,6 +1532,14 @@
     "Message": "Missing required user role to acquire a bulk AADJ token. For more information please go to https://go.microsoft.com/fwlink/?linkid=2224591."
   },
   {
+    "code": 293004,
+    "Message": "The target-device identifier in the request {targetDeviceId} was not found in the tenant {tenantId}."
+  },
+  {
+    "code": 300030,
+    "Message": "not found"
+  },
+  {
     "code": 399206,
     "Message": "An unexpeted and non-retryable error happened when fetching bloomfilter data from blob storage."
   },
@@ -1678,6 +1694,10 @@
   {
     "code": 500033,
     "Message": "There is an issue with the key '{kid}'. It has both x5t and x5c values, but they do not match. Please make sure the x5t value is the Base64Url-encoded SHA-1 thumbprint of the first certificate in x5c."
+  },
+  {
+    "code": 500061,
+    "Message": "Assertion failed signature validation."
   },
   {
     "code": 500081,
@@ -1912,6 +1932,10 @@
     "Message": "The resource tenant's cross-tenant access policy does not allow this user to access this tenant."
   },
   {
+    "code": 500277,
+    "Message": "External ID Token has unexpected issuer: {issuer}."
+  },
+  {
     "code": 500331,
     "Message": "An error occurred while attempting to create a certificate from bytes."
   },
@@ -1962,6 +1986,10 @@
   {
     "code": 500883,
     "Message": "Limit on telecom MFA calls reached. Please retry with CompanionAppsNotification or try again in a few minutes."
+  },
+  {
+    "code": 501241,
+    "Message": "Mandatory Input '{paramName}' missing from transformation id '{transformId}'."
   },
   {
     "code": 501271,
@@ -2062,6 +2090,14 @@
   {
     "code": 530035,
     "Message": "Access has been blocked by security defaults."
+  },
+  {
+    "code": 530081,
+    "Message": "Managed browser or Microsoft Edge is required for device registration to succeed."
+  },
+  {
+    "code": 650011,
+    "Message": "The user or administrator has not consented to use the application with ID '{identifier}'{namePhrase}. Send an interactive authorization request for this user and resource. Alternatively, the Application URI {uri} for the App:'{appId}'{name} in the tenant '{tenant}' might be in conflict with the Application URI for the multitenant app '{conflict}'. Update the registered Application URI to something else to avoid the conflict."
   },
   {
     "code": 650041,
@@ -2356,6 +2392,10 @@
     "Message": "Admin consent is required in order to allow token to be issued for clients to access resource."
   },
   {
+    "code": 900971,
+    "Message": "No reply address provided."
+  },
+  {
     "code": 1000005,
     "Message": "Invalid definition for external identity provider, domain is missing"
   },
@@ -2492,6 +2532,10 @@
     "Message": "Received invalid dk_jwk key thumbprint."
   },
   {
+    "code": 1000104,
+    "Message": "Resource cloud {resourceCloud} is not allowed on identity tenant {identityTenant}."
+  },
+  {
     "code": 1000501,
     "Message": "Unable to read session document from Session Store."
   },
@@ -2502,6 +2546,10 @@
   {
     "code": 1000503,
     "Message": "Request contains mismatched device ids."
+  },
+  {
+    "code": 1000701,
+    "Message": "Multiple devices with the same device-name found in tenant {tenant}. Please reach out to your tenant-admin to ensure uniqueness of device display-name."
   },
   {
     "code": 1002001,
@@ -2704,8 +2752,16 @@
     "Message": "Partitioned token signing key is not found."
   },
   {
+    "code": 2205013,
+    "Message": "Certificate Revocation List (CRL) download is currently in progress. Please try again in few minutes."
+  },
+  {
     "code": 5000611,
     "Message": "Symmetric Key Derivation Function version '{version}' is invalid."
+  },
+  {
+    "code": 5000811,
+    "Message": "Unable to verify token signature. The signing key identifier does not match any valid registered keys."
   },
   {
     "code": 5001210,
@@ -2726,6 +2782,10 @@
   {
     "code": 5001214,
     "Message": "Authentication failed."
+  },
+  {
+    "code": 5002726,
+    "Message": "Invalid JWT token. Found unsupported token header. Supported headers are runtime specific based on keys."
   },
   {
     "code": 7000011,
@@ -2932,6 +2992,10 @@
     "Message": "The client application {appId} is missing service principal in the tenant {tenantId}. See instructions here: https://go.microsoft.com/fwlink/?linkid=2225119"
   },
   {
+    "code": 9001011,
+    "Message": "Device policy contains unsupported required device state: {state}."
+  },
+  {
     "code": 9002310,
     "Message": "Invalid request. The transforms element must contain at least one transform."
   },
@@ -3054,5 +3118,9 @@
   {
     "code": 9002340,
     "Message": "The permission (scope) list {scopeListString} is missing Rdp flow allowed permissions."
+  },
+  {
+    "code": 9002341,
+    "Message": "User is required to permit SSO."
   }
 ]
