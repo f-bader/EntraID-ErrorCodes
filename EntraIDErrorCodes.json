@@ -3122,5 +3122,9 @@
   {
     "code": 9002341,
     "Message": "User is required to permit SSO."
+  },
+  {
+    "code": 70008,
+    "Message": "The provided authorization code or refresh token has expired due to inactivity."
   }
 ]
