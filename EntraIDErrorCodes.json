@@ -3134,14 +3134,10 @@
   {
     "code": 1400001 ,
     "Message": "Request nonce is not provided."
-  },
-  {
-    "code": 500532,
-    "Message": "Account is locked because user tried to sign in too many times with an incorrect user ID or password."
-  },
+  },  
   {
     "code": 70000,
     "Message": "Provided grant is invalid or malformed."
-  }
+  },
   
 ]
