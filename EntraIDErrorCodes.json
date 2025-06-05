@@ -3141,7 +3141,7 @@
   },
   {
     "code": 70000,
-    "Message": "The provided value for the 'code' parameter is not valid."
-  },
+    "Message": "Provided grant is invalid or malformed."
+  }
   
 ]
