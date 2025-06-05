@@ -3126,5 +3126,22 @@
   {
     "code": 70008,
     "Message": "The provided authorization code or refresh token has expired due to inactivity."
-  }
+  },
+  {
+    "code": 5000225,
+    "Message": "This tenant has been blocked due to inactivity."
+  },
+  {
+    "code": 1400001 ,
+    "Message": "Request nonce is not provided."
+  },
+  {
+    "code": 500532,
+    "Message": "Account is locked because user tried to sign in too many times with an incorrect user ID or password."
+  },
+  {
+    "code": 70000,
+    "Message": "The provided value for the 'code' parameter is not valid."
+  },
+  
 ]
