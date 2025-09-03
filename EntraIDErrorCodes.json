@@ -3139,5 +3139,9 @@
     "code": 70000,
     "Message": "Provided grant is invalid or malformed."
   },
+  {
+    "code": 500532,
+    "Stopped by threatintelligence"
+  },
   
 ]
