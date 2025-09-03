@@ -3122,5 +3122,26 @@
   {
     "code": 9002341,
     "Message": "User is required to permit SSO."
-  }
+  },
+  {
+    "code": 70008,
+    "Message": "The provided authorization code or refresh token has expired due to inactivity."
+  },
+  {
+    "code": 5000225,
+    "Message": "This tenant has been blocked due to inactivity."
+  },
+  {
+    "code": 1400001 ,
+    "Message": "Request nonce is not provided."
+  },  
+  {
+    "code": 70000,
+    "Message": "Provided grant is invalid or malformed."
+  },
+  {
+    "code": 500532,
+    "Stopped by threatintelligence"
+  },
+  
 ]
